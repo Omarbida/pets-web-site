@@ -1,0 +1,318 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Shantell Sans', cursive;
+}
+body{
+ 
+  background-color: rgb(151, 151, 151);
+ 
+  }
+.App{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.logo{
+height: 65px;
+border-radius: 50%;
+overflow: hidden;
+}
+.logo img{
+  height: 65px;
+  width: 65px;
+}
+.modle{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #66666686;
+  z-index: 99;
+  backdrop-filter: blur(4px);
+}
+.modle form{
+  max-width: 500px;
+  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 100;
+  border: 2px solid rgb(102, 102, 102);
+  background: #aaaaaa;
+  box-shadow: 0 0 10px rgb(80, 80, 80);
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+.modle form textarea{
+  font-size: 1em;
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(231, 231, 231);
+  color: rgb(15, 15, 15);
+  border-radius: 10px;
+  height: 5em;
+  border: none;
+}
+.modle form textarea:focus{
+  outline: none;
+}
+.modle form input{
+  font-size: 1em;
+  padding: 8px;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  color: rgb(15, 15, 15);
+  border-radius: 5px;
+  border: none;
+}
+.modle form input:focus{
+  outline: none;
+}
+.modle form button{
+  width: 47%;
+  font-size: 1em;
+  padding: 8px;
+  background-color: rgb(30, 167, 48);
+  color: rgb(15, 15, 15);
+  border-radius: 5px;
+  border: none;
+}
+.modle form button:hover{
+  background-color: rgb(24, 133, 39);
+}
+.head{
+  background-color: rgb(35, 35, 68);
+  width: 100%;
+  height: 13vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 0 3px black;
+}
+.head .firstpart{
+  display: flex;
+  gap: 10px;
+}
+.head .firstpart h1{
+  font-size: 2.5em;
+}
+.head button {
+  background-color: white;
+  color: rgb(35, 35, 68);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 2em;
+  box-shadow: 1px 0 3px black;
+}
+.head button:hover{
+  scale: 105%;
+}
+
+.navbar{
+  width: 1000px;
+  margin-top: 0.5em;
+  padding: 5px 5px;
+  height: 3em;
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  
+}
+.dropdown{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  position: relative;
+  border-radius: 5px;
+}
+.items{
+  top: 0%;
+  position: absolute;
+  z-index: 10;
+  background-color: white ;
+  border-radius: 5px;
+}
+.dropdown div{
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.dropdown svg{
+  position: absolute;
+  top: 20%;
+  right: 0%;
+}
+.item{
+  margin-top: 5px;
+  padding: 5px 0;
+}
+.item:hover{
+ background-color: #868383;
+}
+.navbar input{
+  width: 40%;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+.navbar input:focus{
+  outline: none;
+}
+.navbar button{
+  padding: 0 5px;
+  border: none;
+  background-color: rgb(131, 131, 131);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+}
+.filters{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.content{
+  margin-top: 3em;
+  width: 97%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.card{
+  margin-top: 2em;
+  padding: 5px;
+  background: rgb(151, 151, 151);
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5em;
+  border: 1px solid rgb(105, 105, 105);
+  border-radius: 0.3em;
+  height: auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.card .name{
+  margin-top: 0.5em;
+  width: 90%;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+}
+.card-info{
+  width: 100%;
+  background-color: rgb(122, 122, 122);
+  border-radius: 5px;
+  padding-left: 10px;
+  box-shadow: 1px 1px 3px rgba(88, 88, 88, 0.603);
+}
+.card-info p span{
+  font-weight: 600;
+}
+.card p{
+  padding: 5px 0;
+  color:  rgb(0, 0, 0);
+}
+.img{
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgba(88, 88, 88, 0.603);
+}
+.card .name{
+  text-align: center;
+}
+.card img{
+  width: 100%;
+}
+.card button{
+  padding: 10px 0;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+}
+.card button:disabled{
+  color: white;
+  border: none;
+  background-color: rgb(44, 73, 44);
+}
+.card button:hover{
+  filter: brightness(120%);
+}
+.card button:disabled{
+  filter: brightness(70%);
+}
+
+.notavailble{
+  position: absolute;
+  color: black;
+  font-size: 3em;
+  background-color: rgba(202, 59, 59, 0.541);
+  overflow: hidden;
+  transition: all 0.5s;
+  opacity: 0;
+  text-align: center;
+  
+}
+
+.notavailble.active{
+  top: 20%;
+  width: 100%;
+  transform: rotate(20deg);
+  opacity: 1;
+}
+@media screen and  (max-width: 1024px){
+  .navbar{
+    width: 98%;
+    padding: 5px 10px;
+  }
+  .filters{
+    
+    width: 70%;
+  }
+}
+@media screen and  (max-width: 425px){
+  .navbar{
+    height: auto;
+    width: 98%;
+    padding: 5px 10px;
+    align-items: center;
+  }
+  .filters{
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+  }
+  .filters .dropdown{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .navbar input{
+    height: 2em;
+  }
+}
+  
